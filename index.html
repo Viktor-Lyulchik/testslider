@@ -2,10 +2,270 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>YachtJet</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <h1>This is an examle project</h1>
+    <section class="our-yachts-section" id="our-yachts">
+      <div class="our-yachts-section-cont container">
+        <h2 class="our-yachts-section-header">
+          Choose your dream yacht and sail away into the sunset
+        </h2>
+        <div class="slider">
+          <ul class="our-yachts-section-list">
+            <li
+              class="our-yachts-section-list-item our-yachts-section-cart slides"
+            >
+              <picture class="our-yachts-section-cart-img">
+                <source
+                  srcset="
+                    img/ouryachts/arrow-m.png    1x,
+                    img/ouryachts/arrow-m@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    img/ouryachts/arrow-t.png    1x,
+                    img/ouryachts/arrow-t@2x.png 2x
+                  "
+                  media="(max-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    img/ouryachts/arrow-d.png    1x,
+                    img/ouryachts/arrow-d@2x.png 2x
+                  "
+                  media="(max-width: 1439px)"
+                />
+                <source
+                  srcset="
+                    img/ouryachts/arrow-dw.png    1x,
+                    img/ouryachts/arrow-dw@2x.png 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <img src="img/ouryachts/arrow-m.png" alt="Arrow yacht" />
+              </picture>
+              <div class="our-yachts-section-cart-texts">
+                <h3 class="our-yachts-section-cart-header">
+                  <span class="our-yachts-section-cart-header-main-text"
+                    >Arrow</span
+                  >
+                  <span class="our-yachts-section-cart-header-span"
+                    >LUXURY YAHTS</span
+                  >
+                </h3>
+                <p class="our-yachts-section-cart-property">
+                  LENGTH
+                  <span class="our-yachts-section-cart-property-span"
+                    >48m(155ft)</span
+                  >
+                </p>
+                <p class="our-yachts-section-cart-property">
+                  BUILDER
+                  <span class="our-yachts-section-cart-property-span"
+                    >Admiral</span
+                  >
+                </p>
+                <p class="our-yachts-section-cart-property">
+                  BUILT
+                  <span class="our-yachts-section-cart-property-span"
+                    >2021</span
+                  >
+                </p>
+
+                <p class="our-yachts-section-cart-property">
+                  GUESTS
+                  <span class="our-yachts-section-cart-property-span"
+                    >11 in 5 cabins</span
+                  >
+                </p>
+
+                <p class="our-yachts-section-cart-property last-row">
+                  PRICE
+                  <span class="our-yachts-section-cart-property-span"
+                    >€33,500,000</span
+                  >
+                </p>
+              </div>
+            </li>
+            <li
+              class="our-yachts-section-list-item our-yachts-section-cart slides"
+            >
+              <picture class="our-yachts-section-cart-img">
+                <source
+                  srcset="
+                    img/ouryachts/oasis-m.png    1x,
+                    img/ouryachts/oasis-m@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    img/ouryachts/oasis-t.png    1x,
+                    img/ouryachts/oasis-t@2x.png 2x
+                  "
+                  media="(max-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    img/ouryachts/oasis-d.png    1x,
+                    img/ouryachts/oasis-d@2x.png 2x
+                  "
+                  media="(max-width: 1439px)"
+                />
+                <source
+                  srcset="
+                    img/ouryachts/oasis-dw.png    1x,
+                    img/ouryachts/oasis-dw@2x.png 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <img src="img/ouryachts/oasis-m.png" alt="Arrow yacht" />
+              </picture>
+              <div class="our-yachts-section-cart-texts">
+                <h3 class="our-yachts-section-cart-header">
+                  <span class="our-yachts-section-cart-header-main-text"
+                    >BENETTI OASIS 40M BO122</span
+                  >
+                  <span class="our-yachts-section-cart-header-span"
+                    >LUXURY YAHTS</span
+                  >
+                </h3>
+                <p class="our-yachts-section-cart-property">
+                  LENGTH
+                  <span class="our-yachts-section-cart-property-span"
+                    >41m (133ft)</span
+                  >
+                </p>
+                <p class="our-yachts-section-cart-property">
+                  SHIPYARD
+                  <span class="our-yachts-section-cart-property-span"
+                    >Benetti</span
+                  >
+                </p>
+                <p class="our-yachts-section-cart-property">
+                  BUILT
+                  <span class="our-yachts-section-cart-property-span"
+                    >2025</span
+                  >
+                </p>
+
+                <p class="our-yachts-section-cart-property">
+                  GUESTS
+                  <span class="our-yachts-section-cart-property-span"
+                    >10 in 5 cabins</span
+                  >
+                </p>
+
+                <p class="our-yachts-section-cart-property last-row">
+                  PRICE
+                  <span class="our-yachts-section-cart-property-span"
+                    >€23,210,000</span
+                  >
+                </p>
+              </div>
+            </li>
+            <li
+              class="our-yachts-section-list-item our-yachts-section-cart slides"
+            >
+              <picture class="our-yachts-section-cart-img">
+                <source
+                  srcset="
+                    img/ouryachts/anna-m.png    1x,
+                    img/ouryachts/anna-m@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    img/ouryachts/anna-t.png    1x,
+                    img/ouryachts/anna-t@2x.png 2x
+                  "
+                  media="(max-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    img/ouryachts/anna-d.png    1x,
+                    img/ouryachts/anna-d@2x.png 2x
+                  "
+                  media="(max-width: 1439px)"
+                />
+                <source
+                  srcset="
+                    img/ouryachts/anna-dw.png    1x,
+                    img/ouryachts/anna-dw@2x.png 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <img src="img/ouryachts/anna-m.png" alt="Arrow yacht" />
+              </picture>
+              <div class="our-yachts-section-cart-texts">
+                <h3 class="our-yachts-section-cart-header">
+                  <span class="our-yachts-section-cart-header-main-text"
+                    >BELLE ANNA</span
+                  >
+                  <span class="our-yachts-section-cart-header-span"
+                    >LUXURY YAHTS</span
+                  >
+                </h3>
+                <p class="our-yachts-section-cart-property">
+                  LENGTH
+                  <span class="our-yachts-section-cart-property-span"
+                    >50m(155ft)</span
+                  >
+                </p>
+                <p class="our-yachts-section-cart-property">
+                  SHIPYARD
+                  <span class="our-yachts-section-cart-property-span">ISA</span>
+                </p>
+                <p class="our-yachts-section-cart-property">
+                  BUILT
+                  <span class="our-yachts-section-cart-property-span"
+                    >2012</span
+                  >
+                </p>
+
+                <p class="our-yachts-section-cart-property">
+                  GUESTS
+                  <span class="our-yachts-section-cart-property-span"
+                    >12 in 6 cabins</span
+                  >
+                </p>
+
+                <p class="our-yachts-section-cart-property last-row">
+                  PRICE
+                  <span class="our-yachts-section-cart-property-span"
+                    >€21,000,000</span
+                  >
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button
+          class="our-yachts-section-button"
+          type="button"
+          onclick="location.href='#section-rent'"
+        >
+          Yacht rental
+        </button>
+      </div>
+    </section>
+
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
