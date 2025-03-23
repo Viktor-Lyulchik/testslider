@@ -14,10 +14,7 @@ function updateSlidePosition() {
   const slidesPerView = getSlidesPerView();
   const maxIndex = Math.ceil(totalSlides / slidesPerView) - 1;
 
-  // **Головне виправлення:** обмежуємо index
-  if (index < 0) index = 0;
-  if (index > maxIndex) index = maxIndex;
-
+  index = Math.max(0, Math.min(index, maxIndex)); // Обмеження index
   slides.style.transform = `translateX(-${index * (100 / slidesPerView)}%)`;
 }
 

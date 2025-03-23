@@ -106,12 +106,13 @@ img {
   width: 100%;
   max-width: 600px;
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 10px;
 }
 
 .slides {
   display: flex;
   transition: transform 0.3s ease-in-out;
+  width: 100%; /* Початкова ширина */
 }
 
 .slides li {
@@ -127,6 +128,10 @@ img {
 
 /* Планшет: 2 фото на екрані */
 @media (min-width: 768px) {
+  .slides {
+    width: 200%; /* Вдвічі ширше, щоб вмістити 2 фото */
+  }
+
   .slides li {
     width: 50%;
   }
@@ -141,7 +146,7 @@ img {
 
   .slides {
     flex-wrap: wrap;
-    gap: 10px;
+    width: 100%;
     transform: none !important;
   }
 
