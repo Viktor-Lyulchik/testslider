@@ -95,6 +95,12 @@ img {
 }
 
 /* slider */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .slider {
   position: relative;
   width: 100%;
@@ -103,38 +109,30 @@ img {
   border-radius: 24px;
 }
 
-/* Мобільний та планшетний вигляд – слайдер */
 .slides {
   display: flex;
-  padding: 0;
-  margin: 0;
-  /* list-style: none; */
   transition: transform 0.3s ease-in-out;
-  width: 600%; /* Щоб всі елементи вміщувались */
 }
 
 .slides li {
   flex-shrink: 0;
   width: 100%;
+  list-style: none;
 }
 
-.slides picture {
+.slides img {
   width: 100%;
   display: block;
 }
 
-/* Планшетний вигляд – 2 фото за раз */
+/* Планшет: 2 фото на екрані */
 @media (min-width: 768px) {
-  .slides {
-    width: 300%; /* Вдвічі менше для правильного розрахунку */
-  }
-
   .slides li {
     width: 50%;
   }
 }
 
-/* Десктоп – 3 фото в ряд, без свайпу */
+/* Десктоп: 3 фото в ряд */
 @media (min-width: 1280px) {
   .slider {
     max-width: 100%;
@@ -142,17 +140,13 @@ img {
   }
 
   .slides {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    /* gap: 10px; */
+    gap: 10px;
     transform: none !important;
-    width: 100%;
   }
 
   .slides li {
     width: calc(33.333% - 10px);
-    flex-shrink: 1;
   }
 }
 /* slider */
