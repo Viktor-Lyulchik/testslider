@@ -13,12 +13,16 @@ function getSlidesPerView() {
 function updateSlidePosition() {
   const slidesPerView = getSlidesPerView();
   const maxIndex = Math.ceil(totalSlides / slidesPerView) - 1;
-  index = Math.max(0, Math.min(index, maxIndex)); // Обмеження index
+
+  // **Головне виправлення:** обмежуємо index
+  if (index < 0) index = 0;
+  if (index > maxIndex) index = maxIndex;
+
   slides.style.transform = `translateX(-${index * (100 / slidesPerView)}%)`;
 }
 
 function moveSlide(direction) {
-  if (window.innerWidth >= 1280) return;
+  if (window.innerWidth >= 1280) return; // Вимикаємо свайп на десктопі
   index += direction;
   updateSlidePosition();
 }
@@ -35,6 +39,7 @@ slides.addEventListener('touchmove', e => {
   let diff = startX - moveX;
 
   if (Math.abs(diff) > 50) {
+    // Мінімальна відстань для свайпу
     moveSlide(diff > 0 ? 1 : -1);
     isDragging = false;
   }
